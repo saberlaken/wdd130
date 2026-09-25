@@ -1,3 +1,11 @@
+/* Standard tag selectors */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -26,12 +34,8 @@ p {
 }
 
 aside {
+    position: relative;
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
     text-align: center;
 }
 
@@ -41,12 +45,19 @@ aside img {
 
 }
 
+aside h2 {
+    position: absolute;
+    top: 57px;
+    left: 150px;
+}
+
 main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 footer {
@@ -57,4 +68,18 @@ footer {
 
 main {
     max-width: 840px;
+}
+
+/* CSS class selectors */
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    background-color: #ddd;
+    color: black;
+}
+
+.h2 {
+    color: yellow;
 }
